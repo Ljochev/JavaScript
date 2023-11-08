@@ -8,7 +8,7 @@ console.log("The student have both coffee and tea :",(hasCoffee && hasTea))
 console.log("It is true that the student doesn't have tea :",(true != hasTea))
 console.log("The student have either coffee or milk, but not both :",((hasCoffee || hasMilk) && (hasCoffee != hasMilk)))
 console.log("It is true that the student has either tea and milk, or coffee and tea :",((hasTea && hasMilk) || (hasCoffee && hasTea)))
-console.log("The student have neither coffee nor tea :",((hasTea != true) && (hasCoffee != true)))
+console.log("The student have neither coffee nor tea :",((hasTea != true) || (hasCoffee != true)))
 
 console.log("   ")
 
