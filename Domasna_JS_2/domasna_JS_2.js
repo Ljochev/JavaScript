@@ -1,23 +1,23 @@
 // 1. а) 
 
-// let globalNum = 10
+let globalNum = 10
 
-// function checkScope () {
-//     console.log(globalNum)
-// }
-// checkScope ()
+function checkScope () {
+    console.log(globalNum)
+}
+checkScope ()
 
 // б)
 
-let globalNum = 10
-function checkScope () {
-    let localNum = 10
-    return localNum
-}
+// let globalNum = 10
+// function checkScope () {
+//     let localNum = 10
+//     // return localNum
+// }
 
-console.log(globalNum === checkScope ())
+// console.log(globalNum === localNum)
 
-// Answer : true 
+// Answer : Error
 
 // в)
 
