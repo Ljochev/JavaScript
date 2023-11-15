@@ -393,9 +393,7 @@ let zooAnimals = [
 // let myAge = myAnimals.map(object => object.age).reduce((acc, curr) => acc + curr,0)
 // console.log(newZooAnimals[0].name, myAge)
 
-// d)
-// најдете која група на животни има најмал број жители и најголем број жители,
-//  потоа направете нова низа која ги содржи сите имиња на жителите
+// d) ------------------
 
 
 // let checkResidents = zooAnimals.sort((a,b) => a.residents.length - b.residents.length)
