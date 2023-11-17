@@ -5,7 +5,9 @@
 // console.log(fruits[1])
 
 // fruits.push("lemon")
-
+// console.log(fruits)
+//  fruits.pop()
+//  console.log(fruits)
 // б. __________________________________________________________________
 
 // let person = {
@@ -30,6 +32,7 @@
 // let end = 10
 // let sum = 0
 // for(let i = start; i <= end; i++){
+    
 // if(i % 2 === 0){
 //     sum += i
 // }
@@ -45,29 +48,30 @@
 // }
 
 // for(let x in person){
-//     console.log( x + ": " + person[x])
+//     console.log( x + " :" + person[x])
 
 // }
 
 // г. __________________________________________________________________
 
 // let colors = ["red", "green", "blue"]
-
+// let i=0
 // for(let x of colors){
 
-// console.log(colors[0].length + " " + x)
-
+// console.log(colors[i].length + " " + x)
+// i++
 // }
 
 // 3. a. __________________________________________________________________
 
 
 // let count = 5
-
-// while(count >= 1){
-//     console.log(count)
-//     count--
+// let i = count
+// while(i >= 1){
+//     console.log(i)
+//     i--
 // }
+// console.log(count)
 
 // б. __________________________________________________________________
 
@@ -76,8 +80,11 @@
 // do{
 //     console.log(num)
 // num--
+
 // } while(num > 5)
 
+
+// 
 // 4. a.  __________________________________________________________________
 
 // function multiply(num1,num2){
@@ -85,12 +92,11 @@
 //     result = num1 * num2
 //     return result
 // }
-
 // б.  __________________________________________________________________
 
 // let divide = function(num1, num2) {
 //     let result = 0
-//     result = num1 + num2
+//     result = num1 / num2
 //     return result
 // }
 
@@ -161,7 +167,7 @@
 // function myFunction(number){
 //     if(number % 5 === 0 && number % 3 === 0){
 //         console.log("FizzBuzz")
-//     } else if(number % 5 === 0 && number % 3 !== 0){
+//     } else if(number % 5 === 0){
 //         console.log("Buzz")
 //     } else  if(number % 3 === 0){
 //     console.log("Fizz")
@@ -178,7 +184,6 @@
 // function myFunction(month){
 //     switch(month){
 //         case "January" : console.log(31)
-//         break
 //         case "February" : console.log(28)
 //         break
 //         case "March" : console.log(31)
@@ -230,7 +235,7 @@
 //     model: "Altima",
 //     color: "Black",
 //     year: 2015,
-//     extras: ["letterSeats", "backupCamera", "ABS", "LCD Display"]
+//     extras: ["letterSeats", "backupCamera", "ABS", "LCD Display"],
 
 // }
 // console.log(car)
@@ -252,8 +257,10 @@
 //         zipCode: 33702,
 //     },
 // }
-
+// console.log(student)
 // 9. а. __________________________________________________________________
+
+
 
 // let j = 0
 // for(let i = 1; i <= 100; i++){

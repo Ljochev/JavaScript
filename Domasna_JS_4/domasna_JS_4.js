@@ -367,7 +367,7 @@ let zooAnimals = [
 //   ### Задача 4. ----------------
 
 // а. ------------------------
-
+// // 
 // const animalsPopularity = zooAnimals.filter(animal => animal.popularity > 4)
 // animalsPopularity.forEach(animal => console.log(animal.name)) 
 
@@ -377,7 +377,11 @@ let zooAnimals = [
 // let elephant = zooAnimals.find(animal => animal.name === "elephants")
 // let {residents: newElephants} = elephant
 // newElephants.sort((a, b) => b.age - a.age )
-// console.log("The oldest elephant is: ",newElephants[0])
+// console.log("The oldest elephant is: ",newElephants[0].name)
+
+// let elephant = zooAnimals.filter(animal => animal.name === "elephants")[0].residents.sort((a, b) => b.age - a.age)[0].name
+// console.log(elephant)
+
 
 // v) --------------------
 
