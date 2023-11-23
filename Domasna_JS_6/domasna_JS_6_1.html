@@ -1,0 +1,29 @@
+<!-- ### Задача 1. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Manipulation</title>
+  </head>
+  <body>
+    <ul>
+      <li class="Cars">Mercedes</li>
+      <li class="Cars">BMW</li>
+      <li class="Cars">Audi</li>
+    </ul>
+    <script>
+      const liElements = document.querySelectorAll("li");
+
+      liElements.forEach((element) => {
+        element.style.color = "blue";
+      });
+      let ulElement = document.querySelector("ul");
+      const newLiElement = document.createElement("li");
+      newLiElement.textContent = "Ferrari";
+      newLiElement.style.color = "blue";
+      ulElement.appendChild(newLiElement);
+    </script>
+  </body>
+</html>
