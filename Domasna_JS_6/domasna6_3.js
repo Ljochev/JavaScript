@@ -29,6 +29,26 @@ const quizData = [
     ],
     correctAnswer: "William Shakespeare",
   },
+  {
+    question: "Who is the capital city of North Macedonia",
+    options: [
+      "Bitola",
+      "Kumanovo",
+      "Stip",
+      "Skopje",
+    ],
+    correctAnswer: "Skopje",
+  },
+  {
+    question: "What colour is the sky",
+    options: [
+      "Blue",
+      "Green",
+      "Yellow",
+      "Red",
+    ],
+    correctAnswer: "Blue",
+  },
 
 ] 
 const cycleLength = quizData.length
@@ -39,7 +59,7 @@ const container = document.getElementById("quiz-container")
   const myButton = document.createElement("Button")
 myButton.textContent = "Submit"
 myButton.id = "submitt"
-let congratulations = document.createElement("p")
+
 
   let j = 0
   const myInput = []
@@ -83,33 +103,14 @@ let myFinalAnswer
  if(myInput[i].checked === true) 
  {myFinalAnswer = `${myInput[i].value}`} 
 }
-if(j === 0) {
-if(myFinalAnswer === object.correctAnswer)
- {
-  
-  congratulations.textContent = "Congratulations, " + myFinalAnswer + " is the right answer!"
-  
-  document.body.appendChild(congratulations)
-}
- else {
- 
-  congratulations.textContent = "Wrong, " + myFinalAnswer + " is not the right answer!"
-
-  document.body.appendChild(congratulations)
- }
- j++
- quizFunction(quizData[j])
-}
 
 if(myFinalAnswer === object.correctAnswer)
  {
-
-  congratulations.textContent = "Right, " + myFinalAnswer + " is the right answer!"
+  alert(object.question + "True, " + myFinalAnswer + " is the right answer!")
 
 }
  else {
-
-  congratulations.textContent = "Wrong, " + myFinalAnswer + " is not the right answer!"
+  alert(object.question + "True, " + myFinalAnswer + " is the right answer!")
  }
  j++
  quizFunction(quizData[j])
