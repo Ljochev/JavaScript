@@ -1,0 +1,50 @@
+:root {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  font-family:Arial, Helvetica, sans-serif
+  margin: 0;
+  padding: 0;
+}
+#my_form {
+  /* border: 1px solid gray; */
+  border: 0;
+  width: 4in;
+  /* display: flex;
+  flex-direction: column; */
+  border-radius: 0.35em;
+  margin: 1cm auto 0 auto;
+}
+.form-rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.input {
+  background-color: rgb(235,250,242);
+  border: 0;
+  width: 60%;
+  margin: 0.25em 0 0.25em auto;
+  padding: 0 0 0 1em;
+  border-radius: 0.7em;
+}
+.labels {
+  margin: 0.25em auto 0.25em 1em;
+  padding: 0;
+}
+#my-button {
+  background-color: rgb(194, 255, 222);
+  border: 0;
+  border-radius: 0.7em;
+  width: 100%;
+  height: 2em;
+  text-align: center;
+  margin: auto;
+}
+#my-button:hover {
+  cursor: pointer;
+}
+.creation {
+}
