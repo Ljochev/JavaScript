@@ -110,7 +110,7 @@ if(myFinalAnswer === object.correctAnswer)
 
 }
  else {
-  alert(object.question + "Wrong, " + myFinalAnswer + " is not the right answer!")
+  alert(object.question + "Wrong, " + myFinalAnswer + " is not the right answer!" + "The right answer is " + object.correctAnswer)
  }
  j++
  quizFunction(quizData[j])
