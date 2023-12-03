@@ -18,9 +18,6 @@ printFunc(4)
 // ### Задача 2. --------------------------------------------
 // Напишете 5 функции кои враќаат Promise
 
-
-
-// а. да се повикаат истите со .then() и .catch()
 // a)_________________________________________________________
 // const squareNumber = (num) => new Promise((resolve, reject) => {
 //     if(true){
@@ -38,7 +35,7 @@ printFunc(4)
 //     .catch((error) => {
 //         console.log(error)
 //     })
-
+// b)____________________________________________________________
   function mySquareNumber(num) {
     
     return new Promise((resolve, reject) => {
@@ -249,7 +246,9 @@ function mySubtractNumbers(num1, num2) {
 // const checkNumber = (number) =>  new Promise((resolve, reject) => {
    
 //     if(number % 2 === 0) {
+      
 //         resolve("The number " + number + " is even")
+     
     
 //     } else {
 //         reject("The number " + number + " is odd")
@@ -315,7 +314,7 @@ function mySubtractNumbers(num1, num2) {
 //     }
 //     }
 
-//     console.log(calculateSquareRoot(23))
+//     console.log(calculateSquareRoot(-1))
 
 
 

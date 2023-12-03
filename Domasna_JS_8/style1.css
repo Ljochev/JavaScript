@@ -1,0 +1,28 @@
+#my-container {
+  background-color: rgb(205, 253, 237);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+p {
+  width: max-content;
+}
+#NumberID:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  color: black;
+}
+#myDiv {
+  margin: 1em;
+  padding: 1em;
+  width: 1.6in;
+  background-color: lightgrey;
+  border-radius: 2em;
+  border-style: groove;
+  justify-content: center;
+}
+
+#myDiv:hover {
+  background-color: gray;
+  color: white;
+}
