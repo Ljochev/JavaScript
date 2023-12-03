@@ -6,21 +6,26 @@ async function fetchDataAndShow() {
         let i = 0
         let j = 0
 
-        const myContainer = document.createElement("div")
-        myContainer.id = "my-container"
-        document.body.appendChild(myContainer)
+        // const myContainer = document.createElement("div")
+        // myContainer.id = "my-container"
+        // document.body.appendChild(myContainer)
 
 
 
         data.results.forEach( (el) => {
             if(i % 5 === 0) {
-                // const newDiv[j] = document.createElement("div")
-                // newDiv.id = "my-div"
-                // myContainer.appendChild(newDiv[j])
-                console.log(j)
+                const myContainer = document.createElement("div")
+        myContainer.id = `my-container${j}`
+        myContainer.classList.add("my-container")
+        document.body.appendChild(myContainer)
+      
+                
                 j++
         // console.log(i)
             }
+            // if()
+            const myContainer = document.getElementById(`my-container${j-1}`)
+    
             const newDiv = document.createElement("div")
             newDiv.id = "my-div"
             myContainer.appendChild(newDiv)

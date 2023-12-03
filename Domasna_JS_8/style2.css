@@ -1,8 +1,12 @@
-#my-container {
+body {
   background-color: rgb(205, 253, 237);
-  display: flex;
+}
+.my-container {
+  /* background-color: rgb(205, 253, 237); */
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
+  display: flex;
 }
 
 p {
