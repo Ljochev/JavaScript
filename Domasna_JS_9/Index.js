@@ -55,6 +55,8 @@ rectangle2.setHeight = 17
 rectangle2.describe()
 console.log(" and area of ", rectangle2.getArea() )
 
+console.log("Test")
+
 
 // 4)_________________________________________ 
 // class BankAccount{
