@@ -57,8 +57,12 @@ console.log(" and area of ", rectangle2.getArea() )
 
 console.log("Test")
 
+
 function addition(a, b) {
     return a+b;
+}
+function substraction(a, b) {
+    return a - b;
 }
 
 // 4)_________________________________________ 
