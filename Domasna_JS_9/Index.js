@@ -1,77 +1,4 @@
-
-// 1)_____________________________________
-
-
-class Car{
-    constructor(make, model, year, mileage){
-        this.make = make
-        this.model = model
-        this.year = year
-        this.mileage = mileage
-    
-    }
-    start(){
-        console.log("Engine started")
-    }
-    drive(distance){
-        if(distance > 0) {
-        this.mileage = this.mileage + distance
-        } else {
-            console.log("Invalid distance!")
-        }
-    }
-    getMilege() {
-        console.log(`The current milege is ${this.mileage}`)
-    }
-}
-const myCar = new Car("Mercedes", "CLS", 2022, 11043)
-myCar.start()
-myCar.getMilege()
-myCar.drive(30)
-myCar.getMilege()
-
-// 2)__________________________________________
-
-
-class Animal{
-    constructor(name, colour, sex) {
-        this.name = name
-        this.colour = colour
-        this.sex = sex
-    }
-info(){
-    console.log(`My name is ${this.name}, I'm ${this.sex} and my colour is ${this.colour}`)
-}
-name(){
-    return this.name
-}
-}
-
-class Dog extends Animal {
-    constructor(name, colour, sex, breed, age ){
-        super(name, colour, sex)
-        this.breed = breed
-        this.age = age
-        
-    }
-    myDog(){
-        console.log(`I'm ${this.age},  my colour is ${this.colour}`)
-    }
-    dogBreed(){
-        return this.breed
-    }
-}
-
-const myAnimal = new Animal("Rex", "Brown", "Male")
-myAnimal.info()
-const myDog = new Dog("Max", "Black", "Male", "Pitbull", 31)
-myDog.myDog()
-console.log(myDog.dogBreed())
-
 // 3)_________________________________________ 
-
-
-
 class Rectangle{
     #width
     #height
@@ -130,44 +57,43 @@ console.log(" and area of ", rectangle2.getArea() )
 
 
 // 4)_________________________________________ 
+// class BankAccount{
+//     #balance
+//     constructor(accountNumber, accountHolder, balance) {
+//         this.accountNumber = accountNumber
+//         this.accountHolder = accountHolder
+//         this.#balance = balance
+//     }
+//     deposit(amount){
+//         this.#balance += amount
+//     }
+//     withdraw(amount){
+//         if(amount < this.#balance){
+//             this.#balance -= amount
+//         } else {
+//             console.log("Ammount entered is above your current balance")
+//         }
+//     }
+//     get getBalance(){
+//         return this.#balance
+//     }
+//   }
 
+//   const accountKosta = new BankAccount(12345678, "Kostadin Ljochev", 300)
+//   console.log(accountKosta.getBalance)
+//   accountKosta.deposit(50)
+//   console.log(accountKosta.getBalance)
+//   accountKosta.withdraw(100)
+//   console.log(accountKosta.getBalance)
+//   accountKosta.withdraw(300)
+//   console.log(accountKosta.getBalance)
 
-class BankAccount{
-    #balance
-    constructor(accountNumber, accountHolder, balance) {
-        this.accountNumber = accountNumber
-        this.accountHolder = accountHolder
-        this.#balance = balance
-    }
-    deposit(amount){
-        this.#balance += amount
-    }
-    withdraw(amount){
-        if(amount < this.#balance){
-            this.#balance -= amount
-        } else {
-            console.log("Ammount entered is above your current balance")
-        }
-    }
-    get getBalance(){
-        return this.#balance
-    }
-  }
+//   const accountMyke = new BankAccount(87654321, "Myke Bryan", 600)
 
-  const accountKosta = new BankAccount(12345678, "Kostadin Ljochev", 300)
-  console.log(accountKosta.getBalance)
-  accountKosta.deposit(50)
-  console.log(accountKosta.getBalance)
-  accountKosta.withdraw(100)
-  console.log(accountKosta.getBalance)
-  accountKosta.withdraw(300)
-  console.log(accountKosta.getBalance)
+//   accountMyke.withdraw(450)
+//   console.log(accountMyke.getBalance)
+//   accountMyke.deposit(50)
+//   console.log(accountMyke.getBalance)
+//   accountMyke.withdraw(500)
+//   console.log(accountMyke.getBalance)
 
-  const accountMyke = new BankAccount(87654321, "Myke Bryan", 600)
-
-  accountMyke.withdraw(450)
-  console.log(accountMyke.getBalance)
-  accountMyke.deposit(50)
-  console.log(accountMyke.getBalance)
-  accountMyke.withdraw(500)
-  console.log(accountMyke.getBalance)
