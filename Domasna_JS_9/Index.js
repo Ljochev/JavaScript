@@ -57,6 +57,9 @@ console.log(" and area of ", rectangle2.getArea() )
 
 console.log("Test")
 
+function substraction(a, b) {
+    return a - b;
+}
 
 // 4)_________________________________________ 
 // class BankAccount{
